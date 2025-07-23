@@ -1,0 +1,694 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    direction: rtl;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #f8ead0;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo-img {
+    height: 300px;
+    width: auto;
+}
+
+/* Hero Section */
+.header {
+    background-color: transparent;
+    padding: 1rem 0;
+    box-shadow: none;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-title {
+    font-family: 'Amiri', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1e3a8a;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(251, 191, 36, 0.4);
+}
+
+.btn-primary.large {
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
+}
+
+.price-note {
+    color: #fbbf24;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.book-cover {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 5rem 0;
+    background-color: #f3e4c5;
+}
+
+.section-title {
+    font-family: 'Amiri', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1e3a8a;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-self: stretch;
+}
+
+.benefit-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto 1rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover {
+  background-color: #f9f4e7; /* بيج ناعم عند التحويم */
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-color: #fbbf24; /* نفس لون التوهج */
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparenr;
+}
+
+.benefit-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.benefit-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+    font-weight: 700;
+}
+
+.benefit-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Book Details Section */
+.book-details {
+  padding: 3rem 0;
+  background-color: #f3e4c5;
+}
+.details-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.details-text h2 {
+    font-family: 'Amiri', serif;
+    font-size: 2.2rem;
+    color: #1e3a8a;
+    margin-bottom: 2rem;
+}
+
+.details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.detail-item i {
+    color: #fbbf24;
+    font-size: 1.2rem;
+    width: 20px;
+}
+
+.mosque-contribution {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.contribution-card {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.contribution-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fbbf24;
+}
+
+.contribution-card p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.hadith-quote {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    border-right: 4px solid #fbbf24;
+}
+
+.hadith-quote p {
+    font-family: 'Amiri', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.hadith-quote span {
+    font-size: 0.9rem;
+    color: #fbbf24;
+}
+
+/* Features Section */
+.features {
+    padding: 5rem 0;
+    background: #f3e4c5;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6); /* ظل خفيف دائم */
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1e2d7d;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid transparent; /* لإظهار الإطار عند الهوفر */
+}
+
+.feature-item:hover {
+  background-color: #fef8ee; /* البيج الفاتح */
+  box-shadow: none; /* إلغاء الظل */
+  border: 2px solid #fbbf24; /* برتقالي فاتح */
+  transform: translateY(-2px);
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: #fbbf24;
+    min-width: 40px;
+}
+
+.feature-item h3 {
+    color: #1e3a8a;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Guarantees Section */
+.guarantees {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+}
+
+.guarantees .section-title {
+    color: white;
+}
+
+.guarantees .section-title::after {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.guarantees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.guarantee-card {
+    background: rgba(255,255,255,0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.guarantee-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.25);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.guarantee-card i {
+    font-size: 3rem;
+    color: #fbbf24;
+    margin-bottom: 1rem;
+}
+
+.guarantee-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #fbbf24;
+}
+
+.guarantee-card p {
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-family: 'Amiri', serif;
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: #1e3a8a;
+    margin-bottom: 2rem;
+}
+
+.payment-methods {
+    margin-top: 2rem;
+}
+
+.payment-methods p {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.payment-icons i {
+    font-size: 2rem;
+    color: #1e3a8a;
+}
+
+/* Contact Section */
+.contact {
+    padding: 3rem 0;
+    background: white;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.contact-item i {
+    color: #fbbf24;
+    font-size: 1.3rem;
+}
+
+.contact-item a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-item a:hover {
+    color: #fbbf24;
+}
+
+/* Footer */
+.footer {
+    background: #1e3a8a;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-logo .logo-img {
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .details-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .btn-primary {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .btn-primary.large {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .guarantees-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.benefit-card,
+.feature-item,
+.guarantee-card {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.loading {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.hero-wrapper {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-item h3 {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: #21325e;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 16px auto;
+  display: block;
+}
+
+.buy-button {
+  background-color: #1e2a78; /* كحلي غامق */
+  color: #ffffff; /* أبيض */
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.buy-button:hover {
+  background-color: #2a3c91; /* كحلي أفتح عند المرور */
+  color: #fbbf24; /* برتقالي */
+  transform: scale(1.05);
+}
