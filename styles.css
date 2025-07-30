@@ -692,3 +692,64 @@ html {
   color: #fbbf24; /* برتقالي */
   transform: scale(1.05);
 }
+
+
+/* Progress Bar Section */
+.progress-wrapper {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.progress-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 600px;
+  text-align: center;
+  font-family: 'Cairo', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.progress-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  height: 18px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  background-color: #f99d1c;
+  height: 100%;
+  width: 0%; /* سيتم التحكم بها يدويًا */
+  transition: width 1s ease;
+}
+
+.btn-hero-blue {
+  background-color: #1e2a78; /* كحلي غامق */
+  color: #ffffff; /* أبيض */
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+
+.btn-hero-blue:hover {
+  background-color: #2a3c91; /* كحلي أفتح عند المرور */
+  color: #fbbf24; /* برتقالي */
+  transform: scale(1.05);
+}
