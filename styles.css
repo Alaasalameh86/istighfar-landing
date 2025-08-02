@@ -799,3 +799,13 @@ html {
 .mosque-button:hover {
   background-color: #1e874c;
 }
+
+.mosque-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  display: block;
+}
