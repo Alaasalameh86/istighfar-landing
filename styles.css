@@ -753,3 +753,49 @@ html {
   color: #fbbf24; /* برتقالي */
   transform: scale(1.05);
 }
+
+
+
+
+.mosque-section {
+  background-color: #fdf7ee;
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.mosque-section h2 {
+  color: #b0723c;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.mosque-image {
+  max-width: 320px;
+  width: 90%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.mosque-section p {
+  font-size: 17px;
+  color: #444;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+}
+
+.mosque-button {
+  display: inline-block;
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.mosque-button:hover {
+  background-color: #1e874c;
+}
